@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Calculator</id>
+    <version>1.0.0</version>
+    <authors>Calculator</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Program Files\C#Projects\source\repos\Calculator\Calculator\bin\Debug\net6.0-windows\Calculator.runtimeconfig.json" target="lib\net6.0-windows7.0\Calculator.runtimeconfig.json" />
+    <file src="D:\Program Files\C#Projects\source\repos\Calculator\Calculator\bin\Debug\net6.0-windows\Calculator.dll" target="lib\net6.0-windows7.0\Calculator.dll" />
+  </files>
+</package>

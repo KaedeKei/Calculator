@@ -1,0 +1,5 @@
+D:\Program Files\C#Projects\source\repos\Calculator\Calculator\bin\Release\net6.0-windows\app.publish\Calculator.exe
+D:\Program Files\C#Projects\source\repos\Calculator\Calculator\bin\Release\net6.0-windows\app.publish\Calculator.dll
+D:\Program Files\C#Projects\source\repos\Calculator\Calculator\bin\Release\net6.0-windows\app.publish\Calculator.deps.json
+D:\Program Files\C#Projects\source\repos\Calculator\Calculator\bin\Release\net6.0-windows\app.publish\Calculator.runtimeconfig.json
+D:\Program Files\C#Projects\source\repos\Calculator\Calculator\bin\Release\net6.0-windows\app.publish\Calculator.pdb

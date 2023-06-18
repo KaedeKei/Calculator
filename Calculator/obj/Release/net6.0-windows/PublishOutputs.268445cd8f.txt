@@ -1,0 +1,5 @@
+C:\Users\Kei\Desktop\Calculator.exe
+C:\Users\Kei\Desktop\Calculator.dll
+C:\Users\Kei\Desktop\Calculator.deps.json
+C:\Users\Kei\Desktop\Calculator.runtimeconfig.json
+C:\Users\Kei\Desktop\Calculator.pdb

@@ -1,0 +1,181 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="378" Width="308">
+
+    <Window.Resources>
+        <Style x:Key="Style_ButtonDefault" TargetType="Button">
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style x:Key="Style_TextBoxHystory" TargetType="TextBox">
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="TextAlignment" Value="Right"/>
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="Margin" Value="5, 1, 5, 1"/>
+            <Setter Property="FontSize" Value="9"/>
+        </Style>
+
+        <Style x:Key="Style_TextBoxInput" TargetType="TextBox">
+            <Setter Property="IsReadOnly" Value="True"/>
+            <Setter Property="TextAlignment" Value="Right"/>
+            <Setter Property="Height" Value="Auto"/>
+            <Setter Property="Width" Value="Auto"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
+        
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="textBoxHystory"
+                 Grid.Row="0" Grid.Column="0"
+                 Grid.ColumnSpan="4"
+                     Style="{StaticResource Style_TextBoxHystory}"/>
+
+        <TextBox x:Name="textBoxInput"
+                 Grid.Row="1" Grid.Column="0"
+                 Grid.ColumnSpan="4"
+                     Style="{StaticResource Style_TextBoxInput}"/>
+
+        <Button x:Name="buttonCE"
+                Grid.Row="2" Grid.Column="0"
+                    Content="CE"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonCE_OnClick"/>
+        
+        <Button x:Name="buttonC"
+                Grid.Row="2" Grid.Column="1"
+                    Content="C"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonC_OnClick"/>
+        
+        <Button x:Name="buttonDel"
+                Grid.Row="2" Grid.Column="2"
+                    Content="&lt;"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonDel_OnClick"/>
+        
+        <Button x:Name="buttonDiv"
+                Grid.Row="2" Grid.Column="3"
+                    Content="/"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonDiv_OnClick"/>
+        
+        <Button x:Name="button7"
+                Grid.Row="3" Grid.Column="0"
+                    Content="7"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button7_OnClick"/>
+        
+        <Button x:Name="button8"
+                Grid.Row="3" Grid.Column="1"
+                    Content="8"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button8_OnClick"/>
+        
+        <Button x:Name="button9"
+                Grid.Row="3" Grid.Column="2"
+                    Content="9"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button9_OnClick"/>
+        
+        <Button x:Name="buttonMult"
+                Grid.Row="3" Grid.Column="3"
+                    Content="*"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonMult_OnClick"/>
+        
+        <Button x:Name="button4"
+                Grid.Row="4" Grid.Column="0"
+                    Content="4"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button4_OnClick"/>
+        
+        <Button x:Name="button5"
+                Grid.Row="4" Grid.Column="1"
+                    Content="5"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button5_OnClick"/>
+        
+        <Button x:Name="button6"
+                Grid.Row="4" Grid.Column="2"
+                    Content="6"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button6_OnClick"/>
+        
+        <Button x:Name="buttonSub"
+                Grid.Row="4" Grid.Column="3"
+                    Content="-"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonSub_OnClick"/>
+        
+        <Button x:Name="button1"
+                Grid.Row="5" Grid.Column="0"
+                    Content="1"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button1_OnClick"/>
+        
+        <Button x:Name="button2"
+                Grid.Row="5" Grid.Column="1"
+                    Content="2"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button2_OnClick"/>
+        
+        <Button x:Name="button3"
+                Grid.Row="5" Grid.Column="2"
+                    Content="3"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button3_OnClick"/>
+        
+        <Button x:Name="buttonSum"
+                Grid.Row="5" Grid.Column="3"
+                    Content="+"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonSum_OnClick"/>
+        
+        <Button x:Name="buttonDot"
+                Grid.Row="6" Grid.Column="0"
+                    Content="."
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonDot_OnClick"/>
+        
+        <Button x:Name="button0"
+                Grid.Row="6" Grid.Column="1"
+                    Content="0"
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="Button0_OnClick"/>
+        
+        <Button x:Name="buttonResult"
+                Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2"
+                    Content="="
+                Style="{StaticResource Style_ButtonDefault}"
+                Click="ButtonResult_OnClick"/>
+        
+    </Grid>
+</Window>
